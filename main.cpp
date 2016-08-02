@@ -3,11 +3,11 @@
 using namespace std;
 
 
-//double f(double x)
-//{
-//    double y= D/(d*16)
-//    return y;
-//}
+double focal_distance(double D, double d)
+{
+    double f = (D*D)/(d*16)
+    return f;
+}
 int main()
 {
     double D, d, f;
@@ -29,7 +29,7 @@ int main()
         goto start2;// the program will send you back to enter the D or D correctly
 
     }
-    f=D*D/(16*d);
+    f= focal_distance(double D, double d);
 
 cout<< "the focal distance is:"<< f <<endl;
 
